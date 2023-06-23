@@ -1,9 +1,27 @@
 <h1>Passing data between tabs in Angular</h1>
 
 <div class="btn-container">
-  <button class="btn" (click)="changeColor(colorType.r)">Red</button>
-  <button class="btn" (click)="changeColor(colorType.g)">Green</button>
-  <button class="btn" (click)="changeColor(colorType.b)">Blue</button>
+  <button
+    class="btn"
+    [ngStyle]="{ 'background-color': 'red' }"
+    (click)="changeColor(colorType.r)"
+  >
+    Red
+  </button>
+  <button
+    class="btn"
+    [ngStyle]="{ 'background-color': 'green' }"
+    (click)="changeColor(colorType.g)"
+  >
+    Green
+  </button>
+  <button
+    class="btn"
+    [ngStyle]="{ 'background-color': 'blue' }"
+    (click)="changeColor(colorType.b)"
+  >
+    Blue
+  </button>
 </div>
 
 <br />
